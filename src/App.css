@@ -50,9 +50,9 @@
 }
 
 .blur {
-  background: rgba(35, 165, 170, 0.92);
+  background: rgba(101, 246, 251, 0.92);
   position: absolute;
   border-radius: 50%;
-  filter: blur(240px);
-  z-index: -9;
+  filter: blur(200px);
+  z-index: -5;
 }

@@ -114,7 +114,7 @@
   cursor: pointer;
 }
 
-.right-h > .btn{
+.right-h > .btn {
   position: absolute;
   right: 3rem;
   top: 2rem;
@@ -194,6 +194,60 @@
 
 .hero-blur {
   width: 25rem;
-  height: 30rem;
+  height: 31rem;
   left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-blur {
+    width: 13rem;
+  }
+  .the-best-ad {
+    margin-top: 0;
+    font-size: small;
+    margin-left: -15px;
+    margin-right: -10px;
+    align-self: center;
+    transform: scale(0.9);
+  }
+
+  
+  .hero-text {
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text > div:nth-of-type(3) {
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .figures > div > span:nth-of-type(1) {
+    font-size: large;
+  }
+
+  .figures > div > span:nth-of-type(2) {
+    font-size: small;
+  }
+  .right-h {
+    position: relative;
+    background: none;
+  }
+  .heart-rate {
+    left: 1rem;
+    top: 1rem;
+  }
+  .calories {
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+  }
 }

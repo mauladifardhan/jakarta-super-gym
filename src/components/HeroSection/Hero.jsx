@@ -6,9 +6,12 @@ import hero_img_back from "../../assets/blue_hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/blue_calories.png";
 import { motion } from "framer-motion";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const Hero = () => {
   const transition = { type: "spring", duration: 3 };
+  const isMedium = useMediaQuery("(max-width:768px)");
+
   return (
     <div className="hero">
       <div className="blur hero-blur"></div>
@@ -16,7 +19,7 @@ const Hero = () => {
         <Header />
         {/* The best Ad */}
         <div className="the-best-ad">
-          <motion.div initial={{ left: "210px" }} whileInView={{ left: "8px" }} transition={{ ...transition, type: "tween" }}></motion.div>
+          <motion.div initial={isMedium ? { left: "150px" } : { left: "210px" }} whileInView={{ left: "8px" }} transition={{ ...transition, type: "tween" }}></motion.div>
           <span>the best fitnest in the jakarta</span>
         </div>
         {/* Hero heading */}
