@@ -75,7 +75,7 @@
 
 .details-r > div > img {
   width: 2rem;
-  height: 2ren;
+  height: 2rem;
 }
 
 .right-r > .our-partners {
@@ -91,5 +91,30 @@
 .partners > img {
   width: 3.5rem;
   height: 3rem;
-  
+}
+
+@media screen and (max-width: 768px) {
+  .Reasons {
+    flex-direction: column;
+  }
+  .left-r {
+    grid-auto-rows: auto;
+    overflow: hidden;
+  }
+  .left-r > :nth-child(1) {
+    width: 7rem;
+    height: 16rem;
+  }
+
+  .left-r > :nth-child(2) {
+    width: 10rem;
+    height: 10rem;
+  }
+  .left-r > :nth-child(3) {
+    width: 7rem;
+  }
+  .left-r > :nth-child(4) {
+    width: 7rem;
+    height: 7rem;
+  }
 }

@@ -117,7 +117,7 @@
 .right-h > .btn {
   position: absolute;
   right: 3rem;
-  top: 2rem;
+  top: 1rem;
   color: var(--blueCalory);
 }
 
@@ -192,6 +192,13 @@
   font-size: 20px;
 }
 
+.right-h > .btn {
+  position: absolute;
+  right: 3rem;
+  top: 1rem;
+  color: var(--blueCalory);
+}
+
 .hero-blur {
   width: 25rem;
   height: 31rem;
@@ -206,15 +213,13 @@
     width: 13rem;
   }
   .the-best-ad {
-    margin-top: 0;
+    margin-top: 30px;
     font-size: small;
     margin-left: -15px;
     margin-right: -10px;
     align-self: center;
     transform: scale(0.9);
   }
-
-  
   .hero-text {
     font-size: xx-large;
     align-items: center;
@@ -249,5 +254,26 @@
     position: relative;
     top: 5rem;
     left: 2rem;
+    height: 3rem;
+  }
+  .calories > img {
+    width: 4rem;
+    height: 2.5rem;
+  }
+  .calories > div > :nth-child(2) {
+    color: white;
+    font-size: 1rem;
+  }
+  .hero-img {
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    top: 4rem;
+    align-self: center;
+  }
+  .hero-img-back {
+    width: 15rem;
+    left: 2rem;
+    top: 0rem;
   }
 }

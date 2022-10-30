@@ -6,20 +6,18 @@ import hero_img_back from "../../assets/blue_hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/blue_calories.png";
 import { motion } from "framer-motion";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-
+import NumberCounter from "number-counter";
 const Hero = () => {
   const transition = { type: "spring", duration: 3 };
-  const isMedium = useMediaQuery("(max-width:768px)");
-
+  const mobile = window.innerWidth<=768 ? true: false;
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="blur hero-blur"></div>
       <div className="left-h">
         <Header />
         {/* The best Ad */}
         <div className="the-best-ad">
-          <motion.div initial={isMedium ? { left: "150px" } : { left: "210px" }} whileInView={{ left: "8px" }} transition={{ ...transition, type: "tween" }}></motion.div>
+          <motion.div initial={{ left: mobile?"150px" : "210px"}} whileInView={{ left: "8px" }} transition={{ ...transition, type: "tween" }}></motion.div>
           <span>the best fitnest in the jakarta</span>
         </div>
         {/* Hero heading */}
@@ -38,15 +36,21 @@ const Hero = () => {
         {/* figures */}
         <div className="figures">
           <div>
-            <span>+16</span>
+            <span>
+              <NumberCounter end={150} start={100} delay='4' preFix="+"></NumberCounter>
+            </span>
             <span>Expert Coaches</span>
           </div>
           <div>
-            <span>+615</span>
+            <span>
+            <NumberCounter end={370} start={100} delay='4' preFix="+"></NumberCounter>
+            </span>
             <span>members joined</span>
           </div>
           <div>
-            <span>+98</span>
+            <span>
+            <NumberCounter end={98} start={34} delay='4' preFix="+"></NumberCounter>
+            </span>
             <span>fitness Programs</span>
           </div>
         </div>
